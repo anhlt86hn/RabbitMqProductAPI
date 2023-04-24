@@ -18,3 +18,4 @@ consumer.Received += (model, eventArgs) =>
     Console.WriteLine($"Product message received: {message}");
 };
 channel.BasicConsume(queue: "product", autoAck: true, consumer: consumer);
+Console.ReadKey();
